@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+<body>
+
+<div class = "show_page">
+<header>
+
+
+<h1><%= @page.title %></h1>
+<small>Last edited <%= time_ago_in_words(@page.updated_at) %> ago.</small>
+</header>
+
+<p class="markdown-body"><%= markdown @page.body %></p>
+
+<% if user_signed_in? %>
+  <%= link_to 'Edit', edit_page_path(@page), class: "u-pull-right button" %><br>
+<% end %>
+</div>
+</body>

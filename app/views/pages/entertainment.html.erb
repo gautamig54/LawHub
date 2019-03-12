@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+<head>
+  <%= stylesheet_link_tag    'application', media: 'all'%>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body>
+<h1>Entertainment Cases</h1>
+<!-- <% if @pages.blank? %>
+  <h4>There are no recipes containing the term <%= params[:search] %>.</h4>
+<% end %> -->
+
+<table id="index_page">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Slug</th>
+      <th>Views</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pages.each do |page| %>
+      <% if page.category =='Entertainment' %>
+        <tr>
+          <td><%= link_to page.title, page_path(page)%></td>
+          <td><%= page.slug %></td>
+          <td><%= page.views %></td>
+        </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>
+</body>

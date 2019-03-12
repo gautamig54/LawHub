@@ -1,0 +1,92 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body{
+  position: relative;
+  padding-bottom: 6rem;
+}
+
+.navbar-default {
+  background-color:#FFFFFF;
+  .navbar-right{
+    li{
+      margin-top: 10px;
+      padding-right: 2px;
+      .searchbar{
+        margin-top: 12.5px;
+      }
+    }
+  }
+ }
+
+ footer{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 6rem;
+  padding: 1rem;
+  background-color: #FFFFFF;
+  text-align: center;
+ }
+
+ .sidenav {
+    height:100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+    padding-top: 20px;
+    h2{
+      margin-left: 20px;
+      margin-top: 0px;
+    }
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav p{
+  margin-top: 80px;
+}
+
+.sidenav a:hover {
+    color: #000000;
+}
+
+h1,h2,.field,.actions{
+  margin-left: 210px;
+}
+
+table{
+    margin-left: 200px;
+    border-collapse: separate;
+}
+
+th,td,tr{
+  border-bottom: 1px solid #818181;
+  padding: 30px;
+}
+
+.show_page{
+    margin-left: 200px;
+    padding: 15px;
+    h1{
+      margin-left: 0px;
+    }
+}
+
+.history{
+  margin-left: 50px;
+  h1{
+    margin-left: 50px;
+  }
+}

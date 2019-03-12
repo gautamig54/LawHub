@@ -1,0 +1,12 @@
+<h1>Editing Page</h1>
+
+<%= render 'form', page: @page %>
+
+<%= link_to 'Show', @page %> |
+<%= link_to 'Back', pages_path %>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+<script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+<script>
+    var simplemde = new SimpleMDE();
+</script>
